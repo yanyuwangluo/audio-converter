@@ -1,0 +1,474 @@
+2025-04-02 21:40:37.732 [[32mINFO[0m] [logger.go:185] 日志系统初始化完成，日志文件: logs\audio_converter_2025-04-02.log
+2025-04-02 21:40:37.733 [[32mINFO[0m] [logger.go:185] ==== 音频转换服务初始化 ====
+2025-04-02 21:40:37.733 [[32mINFO[0m] [logger.go:185] 调试模式: true
+2025-04-02 21:40:37.733 [[32mINFO[0m] [logger.go:185] 日志级别: DEBUG
+2025-04-02 21:40:37.733 [[32mINFO[0m] [logger.go:185] 彩色日志: true
+2025-04-02 21:40:37.738 [[32mINFO[0m] [logger.go:185] 在PATH中找到ffmpeg: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:40:37.748 [[32mINFO[0m] [logger.go:185] 在PATH中找到encoder: D:\silk\encoder.exe
+2025-04-02 21:40:37.748 [[32mINFO[0m] [logger.go:185] 音频服务初始化: 上传目录=C:\Users\Administrator\Desktop\go文件管理系统\uploads, SILK目录=C:\Users\Administrator\Desktop\go文件管理系统\outputs
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180] FFmpeg路径: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180] Encoder路径: D:\silk\encoder.exe
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180] 启动文件清理定时任务，间隔: 1小时
+2025-04-02 21:40:37.748 [[32mINFO[0m] [logger.go:185] 音频转换服务启动在 http://localhost:8080
+2025-04-02 21:40:37.748 [[32mINFO[0m] [logger.go:185] 上传目录: ./uploads
+2025-04-02 21:40:37.748 [[32mINFO[0m] [logger.go:185] 输出目录: ./outputs
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180] 路由配置:
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180]   GET  /                - 首页
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180]   POST /upload          - 文件上传接口
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180]   POST /url             - URL转换接口
+2025-04-02 21:40:37.748 [[37mDEBUG[0m] [logger.go:180]   POST /tts             - 文本转语音接口(未实现)
+2025-04-02 21:40:37.758 [[37mDEBUG[0m] [logger.go:180]   GET  /convert?input=x - 直接转换接口
+2025-04-02 21:40:37.758 [[37mDEBUG[0m] [logger.go:180]   GET  /download/:file  - 文件下载接口
+2025-04-02 21:40:37.759 [[37mDEBUG[0m] [logger.go:180]   GET  /static/*file    - 静态资源
+2025-04-02 21:41:39.905 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:28831
+2025-04-02 21:42:13.766 [[32mINFO[0m] [logger.go:185] 正在关闭服务器...
+2025-04-02 21:42:13.766 [[37mDEBUG[0m] [logger.go:180] 开始执行清理任务
+2025-04-02 21:42:13.766 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./uploads
+2025-04-02 21:42:13.767 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./outputs
+2025-04-02 21:42:13.767 [[37mDEBUG[0m] [logger.go:180] 清理任务完成
+2025-04-02 21:42:13.767 [[32mINFO[0m] [logger.go:185] 服务器已关闭
+2025-04-02 21:42:13.768 [[32mINFO[0m] [logger.go:185] 日志系统关闭
+2025-04-02 21:43:22.137 [[32mINFO[0m] [logger.go:185] 日志系统初始化完成，日志文件: logs\audio_converter_2025-04-02.log
+2025-04-02 21:43:22.138 [[32mINFO[0m] [logger.go:185] ==== 音频转换服务初始化 ====
+2025-04-02 21:43:22.138 [[32mINFO[0m] [logger.go:185] 调试模式: true
+2025-04-02 21:43:22.138 [[32mINFO[0m] [logger.go:185] 日志级别: DEBUG
+2025-04-02 21:43:22.138 [[32mINFO[0m] [logger.go:185] 彩色日志: true
+2025-04-02 21:43:22.145 [[32mINFO[0m] [logger.go:185] 在PATH中找到ffmpeg: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:43:22.154 [[32mINFO[0m] [logger.go:185] 在PATH中找到encoder: D:\silk\encoder.exe
+2025-04-02 21:43:22.156 [[32mINFO[0m] [logger.go:185] 音频服务初始化: 上传目录=C:\Users\Administrator\Desktop\go文件管理系统\uploads, SILK目录=C:\Users\Administrator\Desktop\go文件管理系统\outputs
+2025-04-02 21:43:22.158 [[37mDEBUG[0m] [logger.go:180] FFmpeg路径: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:43:22.160 [[37mDEBUG[0m] [logger.go:180] Encoder路径: D:\silk\encoder.exe
+2025-04-02 21:43:22.163 [[37mDEBUG[0m] [logger.go:180] 启动文件清理定时任务，间隔: 1小时
+2025-04-02 21:43:22.171 [[32mINFO[0m] [logger.go:185] 音频转换服务启动在 http://localhost:8080
+2025-04-02 21:43:22.172 [[32mINFO[0m] [logger.go:185] 上传目录: ./uploads
+2025-04-02 21:43:22.172 [[32mINFO[0m] [logger.go:185] 输出目录: ./outputs
+2025-04-02 21:43:22.173 [[37mDEBUG[0m] [logger.go:180] 路由配置:
+2025-04-02 21:43:22.173 [[37mDEBUG[0m] [logger.go:180]   GET  /                - 首页
+2025-04-02 21:43:22.173 [[37mDEBUG[0m] [logger.go:180]   POST /upload          - 文件上传接口
+2025-04-02 21:43:22.173 [[37mDEBUG[0m] [logger.go:180]   POST /url             - URL转换接口
+2025-04-02 21:43:22.174 [[37mDEBUG[0m] [logger.go:180]   POST /tts             - 文本转语音接口(未实现)
+2025-04-02 21:43:22.177 [[37mDEBUG[0m] [logger.go:180]   GET  /convert?input=x - 直接转换接口
+2025-04-02 21:43:22.181 [[37mDEBUG[0m] [logger.go:180]   GET  /download/:file  - 文件下载接口
+2025-04-02 21:43:22.181 [[37mDEBUG[0m] [logger.go:180]   GET  /static/*file    - 静态资源
+2025-04-02 21:43:26.720 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:28982
+2025-04-02 21:43:37.131 [[32mINFO[0m] [logger.go:185] 正在关闭服务器...
+2025-04-02 21:43:37.132 [[37mDEBUG[0m] [logger.go:180] 开始执行清理任务
+2025-04-02 21:43:37.132 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./uploads
+2025-04-02 21:43:37.133 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./outputs
+2025-04-02 21:43:37.133 [[37mDEBUG[0m] [logger.go:180] 清理任务完成
+2025-04-02 21:43:37.134 [[32mINFO[0m] [logger.go:185] 服务器已关闭
+2025-04-02 21:43:37.134 [[32mINFO[0m] [logger.go:185] 日志系统关闭
+2025-04-02 21:44:05.147 [[32mINFO[0m] [logger.go:185] 日志系统初始化完成，日志文件: logs\audio_converter_2025-04-02.log
+2025-04-02 21:44:05.148 [[32mINFO[0m] [logger.go:185] ==== 音频转换服务初始化 ====
+2025-04-02 21:44:05.148 [[32mINFO[0m] [logger.go:185] 调试模式: true
+2025-04-02 21:44:05.148 [[32mINFO[0m] [logger.go:185] 日志级别: DEBUG
+2025-04-02 21:44:05.149 [[32mINFO[0m] [logger.go:185] 彩色日志: true
+2025-04-02 21:44:05.154 [[32mINFO[0m] [logger.go:185] 在PATH中找到ffmpeg: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:44:05.169 [[32mINFO[0m] [logger.go:185] 在PATH中找到encoder: D:\silk\encoder.exe
+2025-04-02 21:44:05.170 [[32mINFO[0m] [logger.go:185] 音频服务初始化: 上传目录=C:\Users\Administrator\Desktop\go文件管理系统\uploads, SILK目录=C:\Users\Administrator\Desktop\go文件管理系统\outputs
+2025-04-02 21:44:05.171 [[37mDEBUG[0m] [logger.go:180] FFmpeg路径: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:44:05.172 [[37mDEBUG[0m] [logger.go:180] Encoder路径: D:\silk\encoder.exe
+2025-04-02 21:44:05.172 [[37mDEBUG[0m] [logger.go:180] 启动文件清理定时任务，间隔: 1小时
+2025-04-02 21:44:05.180 [[32mINFO[0m] [logger.go:185] 音频转换服务启动在 http://localhost:8080
+2025-04-02 21:44:05.181 [[32mINFO[0m] [logger.go:185] 上传目录: ./uploads
+2025-04-02 21:44:05.181 [[32mINFO[0m] [logger.go:185] 输出目录: ./outputs
+2025-04-02 21:44:05.182 [[37mDEBUG[0m] [logger.go:180] 路由配置:
+2025-04-02 21:44:05.182 [[37mDEBUG[0m] [logger.go:180]   GET  /                - 首页
+2025-04-02 21:44:05.183 [[37mDEBUG[0m] [logger.go:180]   POST /upload          - 文件上传接口
+2025-04-02 21:44:05.183 [[37mDEBUG[0m] [logger.go:180]   POST /url             - URL转换接口
+2025-04-02 21:44:05.183 [[37mDEBUG[0m] [logger.go:180]   POST /tts             - 文本转语音接口(未实现)
+2025-04-02 21:44:05.184 [[37mDEBUG[0m] [logger.go:180]   GET  /convert?input=x - 直接转换接口
+2025-04-02 21:44:05.185 [[37mDEBUG[0m] [logger.go:180]   GET  /download/:file  - 文件下载接口
+2025-04-02 21:44:05.185 [[37mDEBUG[0m] [logger.go:180]   GET  /api/files       - 文件列表接口
+2025-04-02 21:44:05.185 [[37mDEBUG[0m] [logger.go:180]   GET  /static/*file    - 静态资源
+2025-04-02 21:44:08.902 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29020
+2025-04-02 21:44:37.551 [[32mINFO[0m] [logger.go:185] 正在关闭服务器...
+2025-04-02 21:44:37.551 [[37mDEBUG[0m] [logger.go:180] 开始执行清理任务
+2025-04-02 21:44:37.552 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./uploads
+2025-04-02 21:44:37.552 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./outputs
+2025-04-02 21:44:37.553 [[37mDEBUG[0m] [logger.go:180] 清理任务完成
+2025-04-02 21:44:37.553 [[32mINFO[0m] [logger.go:185] 服务器已关闭
+2025-04-02 21:44:37.553 [[32mINFO[0m] [logger.go:185] 日志系统关闭
+2025-04-02 21:44:55.144 [[32mINFO[0m] [logger.go:185] 日志系统初始化完成，日志文件: logs\audio_converter_2025-04-02.log
+2025-04-02 21:44:55.147 [[32mINFO[0m] [logger.go:185] ==== 音频转换服务初始化 ====
+2025-04-02 21:44:55.147 [[32mINFO[0m] [logger.go:185] 调试模式: true
+2025-04-02 21:44:55.148 [[32mINFO[0m] [logger.go:185] 日志级别: DEBUG
+2025-04-02 21:44:55.149 [[32mINFO[0m] [logger.go:185] 彩色日志: true
+2025-04-02 21:44:55.154 [[32mINFO[0m] [logger.go:185] 在PATH中找到ffmpeg: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:44:55.167 [[32mINFO[0m] [logger.go:185] 在PATH中找到encoder: D:\silk\encoder.exe
+2025-04-02 21:44:55.167 [[32mINFO[0m] [logger.go:185] 音频服务初始化: 上传目录=C:\Users\Administrator\Desktop\go文件管理系统\uploads, SILK目录=C:\Users\Administrator\Desktop\go文件管理系统\outputs
+2025-04-02 21:44:55.168 [[37mDEBUG[0m] [logger.go:180] FFmpeg路径: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:44:55.169 [[37mDEBUG[0m] [logger.go:180] Encoder路径: D:\silk\encoder.exe
+2025-04-02 21:44:55.169 [[37mDEBUG[0m] [logger.go:180] 启动文件清理定时任务，间隔: 1小时
+2025-04-02 21:44:55.173 [[32mINFO[0m] [logger.go:185] 音频转换服务启动在 http://localhost:8080
+2025-04-02 21:44:55.174 [[32mINFO[0m] [logger.go:185] 上传目录: ./uploads
+2025-04-02 21:44:55.175 [[32mINFO[0m] [logger.go:185] 输出目录: ./outputs
+2025-04-02 21:44:55.176 [[37mDEBUG[0m] [logger.go:180] 路由配置:
+2025-04-02 21:44:55.176 [[37mDEBUG[0m] [logger.go:180]   GET  /                - 首页
+2025-04-02 21:44:55.177 [[37mDEBUG[0m] [logger.go:180]   POST /upload          - 文件上传接口
+2025-04-02 21:44:55.177 [[37mDEBUG[0m] [logger.go:180]   POST /url             - URL转换接口
+2025-04-02 21:44:55.178 [[37mDEBUG[0m] [logger.go:180]   POST /tts             - 文本转语音接口(未实现)
+2025-04-02 21:44:55.178 [[37mDEBUG[0m] [logger.go:180]   GET  /convert?input=x - 直接转换接口
+2025-04-02 21:44:55.178 [[37mDEBUG[0m] [logger.go:180]   GET  /download/:file  - 文件下载接口
+2025-04-02 21:44:55.178 [[37mDEBUG[0m] [logger.go:180]   GET  /api/files       - 文件列表接口
+2025-04-02 21:44:55.178 [[37mDEBUG[0m] [logger.go:180]   GET  /static/*file    - 静态资源
+2025-04-02 21:44:59.522 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29073
+2025-04-02 21:45:03.413 [[32mINFO[0m] [logger.go:185] 收到文件上传请求: 127.0.0.1
+2025-04-02 21:45:03.415 [[32mINFO[0m] [logger.go:185] 上传文件: ttsmaker-file-2025-4-2-18-20-25.mp3, 大小: 18.42 KB
+2025-04-02 21:45:03.416 [[32mINFO[0m] [logger.go:185] 开始转换音频: ttsmaker-file-2025-4-2-18-20-25.mp3
+2025-04-02 21:45:03.417 [[37mDEBUG[0m] [logger.go:180] 保存上传文件: 1743601503417626400.wav (大小: 18864 字节)
+2025-04-02 21:45:03.419 [[37mDEBUG[0m] [logger.go:180] 已保存上传文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601503417626400.wav
+2025-04-02 21:45:03.422 [[37mDEBUG[0m] [logger.go:180] 输出文件路径: C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_214503.silk
+2025-04-02 21:45:03.424 [[37mDEBUG[0m] [logger.go:180] 创建临时PCM文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601503424092900.pcm
+2025-04-02 21:45:03.424 [[37mDEBUG[0m] [logger.go:180] 执行FFmpeg命令: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe -i C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601503417626400.wav -f s16le -acodec pcm_s16le -ar 24000 -ac 1 C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601503424092900.pcm
+2025-04-02 21:45:03.452 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: ffmpeg version 7.1.1-essentials_build-www.gyan.dev
+2025-04-02 21:45:03.452 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libop
+2025-04-02 21:45:03.455 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: encore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+2025-04-02 21:45:03.463 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: [mp3 @ 0000020514d5f480]
+2025-04-02 21:45:03.463 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601503417626400.wav':
+  Duration: 00:00:03.14, start: 0.000000, bitrate: 48 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 48 kb/s
+2025-04-02 21:45:03.465 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+2025-04-02 21:45:03.466 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Press [q] to stop, [?] for help
+2025-04-02 21:45:03.468 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Output #0, s16le, to 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601503424092900.pcm':
+2025-04-02 21:45:03.469 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+2025-04-02 21:45:03.477 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: [out#0/s16le @ 0000020514d73a00]
+2025-04-02 21:45:03.477 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: video:0KiB audio:147KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+size=     147KiB time=00:00:03.14 bitrate= 384.0kbits/s speed= 294x
+2025-04-02 21:45:03.482 [[32mINFO[0m] [logger.go:185] FFmpeg转换为PCM完成
+2025-04-02 21:45:03.482 [[37mDEBUG[0m] [logger.go:180] 执行Encoder命令: D:\silk\encoder.exe C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601503424092900.pcm C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_214503.silk -tencent
+2025-04-02 21:45:03.637 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                1Packets encoded:                2Packets encoded:                3Packets encoded:                4Packets encoded:                5Packets encoded:                6Packets encoded:                7Packets encoded:                8Packets encoded:                9Packets encoded:                10Packets encoded:                11Packets encoded:                12Packets encoded:                13Packets encoded:                14Packets encoded:                15Packets encoded:                16Packets encoded:                17Packets encoded:                18Packets encoded:                19Packets encoded:                20Packets encoded:                21Packets encoded:                22Packets encoded:                23Packets encoded:                24Packets encoded:                25Packets encoded:                26Packets encoded:                27Packets encoded:                28Packets encoded:                29Packets encoded:
+2025-04-02 21:45:03.640 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 30Packets encoded:                31Packets encoded:                32Packets encoded:                33Packets encoded:                34Packets encoded:                35Packets encoded:                36Packets encoded:                37Packets encoded:                38Packets encoded:                39Packets encoded:                40Packets encoded:                41Packets encoded:                42Packets encoded:                43Packets encoded:                44Packets encoded:                45Packets encoded:                46Packets encoded:                47Packets encoded:                48Packets encoded:                49Packets encoded:                50Packets encoded:                51Packets encoded:                52Packets encoded:                53Packets encoded:                54Packets encoded:                55Packets encoded:                56Packets encoded:                57Packets encoded:                58Packets encoded:
+2025-04-02 21:45:03.641 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 59Packets encoded:                60Packets encoded:                61Packets encoded:                62Packets encoded:                63Packets encoded:                64Packets encoded:                65Packets encoded:                66Packets encoded:                67Packets encoded:                68Packets encoded:                69Packets encoded:                70Packets encoded:                71Packets encoded:                72Packets encoded:                73Packets encoded:                74Packets encoded:                75Packets encoded:                76Packets encoded:                77Packets encoded:                78Packets encoded:                79Packets encoded:                80Packets encoded:                81Packets encoded:                82Packets encoded:                83Packets encoded:                84Packets encoded:                85Packets encoded:                86Packets encoded:                87Packets encoded:                88
+2025-04-02 21:45:03.644 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                89Packets encoded:                90Packets encoded:                91Packets encoded:                92Packets encoded:                93Packets encoded:                94Packets encoded:                95Packets encoded:                96Packets encoded:                97Packets encoded:                98Packets encoded:                99Packets encoded:                100Packets encoded:                101Packets encoded:                102Packets encoded:                103Packets encoded:                104Packets encoded:                105Packets encoded:                106Packets encoded:                107Packets encoded:                108Packets encoded:                109Packets encoded:                110Packets encoded:                111Packets encoded:                112Packets encoded:                113Packets encoded:                114Packets encoded:                115Packets encoded:                116Packets encoded:
+2025-04-02 21:45:03.683 [[37mDEBUG[0m] [logger.go:180] 命令标准输出: ********** Silk Encoder (Fixed Point) v 1.0.9.6 ********************
+********** Compiled for 32 bit cpu ******************************* 
+Input:                          C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\uploads\1743601503424092900.pcm
+Output:                         C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\outputs\20250402_214503.silk
+API sampling rate:              24000 Hz
+Maximum internal sampling rate: 24000 Hz
+Packet interval:                20 ms
+Inband FEC used:                0
+DTX used:                       0
+Complexity:                     2
+Target bitrate:                 25000 bps
+
+File length:                    3.140 s
+Time for encoding:              0.189 s (6.035% of realtime)
+Average bitrate:                21.149 kbps
+Active bitrate:                 25.633 kbps
+2025-04-02 21:45:03.683 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 117Packets encoded:                118Packets encoded:                119Packets encoded:                120Packets encoded:                121Packets encoded:                122Packets encoded:                123Packets encoded:                124Packets encoded:                125Packets encoded:                126Packets encoded:                127Packets encoded:                128Packets encoded:                129Packets encoded:                130Packets encoded:                131Packets encoded:                132Packets encoded:                133Packets encoded:                134Packets encoded:                135Packets encoded:                136Packets encoded:                137Packets encoded:                138Packets encoded:                139Packets encoded:                140Packets encoded:                141Packets encoded:                142Packets encoded:                143Packets encoded:                144Packets encoded:                145Packets
+2025-04-02 21:45:03.685 [[32mINFO[0m] [logger.go:185] PCM转换为SILK完成
+2025-04-02 21:45:03.688 [[37mDEBUG[0m] [logger.go:180] 临时文件已清理
+2025-04-02 21:45:03.688 [[32mINFO[0m] [logger.go:185] 音频转换成功: 20250402_214503.silk
+2025-04-02 21:45:03.689 [[32mINFO[0m] [logger.go:185] 音频转换成功: ttsmaker-file-2025-4-2-18-20-25.mp3 -> 20250402_214503.silk (耗时: 0.27秒)
+2025-04-02 21:45:08.519 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29073
+2025-04-02 21:45:33.017 [[32mINFO[0m] [logger.go:185] 正在关闭服务器...
+2025-04-02 21:45:33.017 [[37mDEBUG[0m] [logger.go:180] 开始执行清理任务
+2025-04-02 21:45:33.018 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./uploads
+2025-04-02 21:45:33.018 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./outputs
+2025-04-02 21:45:33.019 [[37mDEBUG[0m] [logger.go:180] 清理任务完成
+2025-04-02 21:45:33.019 [[32mINFO[0m] [logger.go:185] 服务器已关闭
+2025-04-02 21:45:33.019 [[32mINFO[0m] [logger.go:185] 日志系统关闭
+2025-04-02 21:46:18.765 [[32mINFO[0m] [logger.go:185] 日志系统初始化完成，日志文件: logs\audio_converter_2025-04-02.log
+2025-04-02 21:46:18.767 [[32mINFO[0m] [logger.go:185] ==== 音频转换服务初始化 ====
+2025-04-02 21:46:18.767 [[32mINFO[0m] [logger.go:185] 调试模式: true
+2025-04-02 21:46:18.767 [[32mINFO[0m] [logger.go:185] 日志级别: DEBUG
+2025-04-02 21:46:18.767 [[32mINFO[0m] [logger.go:185] 彩色日志: true
+2025-04-02 21:46:18.772 [[32mINFO[0m] [logger.go:185] 在PATH中找到ffmpeg: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:46:18.784 [[32mINFO[0m] [logger.go:185] 在PATH中找到encoder: D:\silk\encoder.exe
+2025-04-02 21:46:18.784 [[32mINFO[0m] [logger.go:185] 音频服务初始化: 上传目录=C:\Users\Administrator\Desktop\go文件管理系统\uploads, SILK目录=C:\Users\Administrator\Desktop\go文件管理系统\outputs
+2025-04-02 21:46:18.785 [[37mDEBUG[0m] [logger.go:180] FFmpeg路径: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:46:18.785 [[37mDEBUG[0m] [logger.go:180] Encoder路径: D:\silk\encoder.exe
+2025-04-02 21:46:18.786 [[37mDEBUG[0m] [logger.go:180] 启动文件清理定时任务，间隔: 1小时
+2025-04-02 21:46:18.789 [[32mINFO[0m] [logger.go:185] 音频转换服务启动在 http://localhost:8080
+2025-04-02 21:46:18.789 [[32mINFO[0m] [logger.go:185] 上传目录: ./uploads
+2025-04-02 21:46:18.790 [[32mINFO[0m] [logger.go:185] 输出目录: ./outputs
+2025-04-02 21:46:18.790 [[37mDEBUG[0m] [logger.go:180] 路由配置:
+2025-04-02 21:46:18.790 [[37mDEBUG[0m] [logger.go:180]   GET  /                - 首页
+2025-04-02 21:46:18.792 [[37mDEBUG[0m] [logger.go:180]   POST /upload          - 文件上传接口
+2025-04-02 21:46:18.793 [[37mDEBUG[0m] [logger.go:180]   POST /url             - URL转换接口
+2025-04-02 21:46:18.795 [[37mDEBUG[0m] [logger.go:180]   POST /tts             - 文本转语音接口(未实现)
+2025-04-02 21:46:18.796 [[37mDEBUG[0m] [logger.go:180]   GET  /convert?input=x - 直接转换接口
+2025-04-02 21:46:18.796 [[37mDEBUG[0m] [logger.go:180]   GET  /download/:file  - 文件下载接口
+2025-04-02 21:46:18.797 [[37mDEBUG[0m] [logger.go:180]   GET  /api/files       - 文件列表接口
+2025-04-02 21:46:18.797 [[37mDEBUG[0m] [logger.go:180]   GET  /static/*file    - 静态资源
+2025-04-02 21:46:22.491 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29156
+2025-04-02 21:46:26.008 [[32mINFO[0m] [logger.go:185] 收到文件上传请求: 127.0.0.1
+2025-04-02 21:46:26.011 [[32mINFO[0m] [logger.go:185] 上传文件: ttsmaker-file-2025-4-2-18-20-25.mp3, 大小: 18.42 KB
+2025-04-02 21:46:26.014 [[32mINFO[0m] [logger.go:185] 开始转换音频: ttsmaker-file-2025-4-2-18-20-25.mp3
+2025-04-02 21:46:26.014 [[37mDEBUG[0m] [logger.go:180] 保存上传文件: 1743601586014944500.wav (大小: 18864 字节)
+2025-04-02 21:46:26.017 [[37mDEBUG[0m] [logger.go:180] 已保存上传文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601586014944500.wav
+2025-04-02 21:46:26.019 [[37mDEBUG[0m] [logger.go:180] 输出文件路径: C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_214626.silk
+2025-04-02 21:46:26.019 [[37mDEBUG[0m] [logger.go:180] 创建临时PCM文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601586019936400.pcm
+2025-04-02 21:46:26.020 [[37mDEBUG[0m] [logger.go:180] 执行FFmpeg命令: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe -i C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601586014944500.wav -f s16le -acodec pcm_s16le -ar 24000 -ac 1 C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601586019936400.pcm
+2025-04-02 21:46:26.044 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: ffmpeg version 7.1.1-essentials_build-www.gyan.dev
+2025-04-02 21:46:26.048 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libop
+2025-04-02 21:46:26.050 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: encore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[mp3 @ 0000026d883cf480] Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601586014944500.wav':
+  Duration: 00:00:03.14, start: 0.000000, bitrate: 48 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 48 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+2025-04-02 21:46:26.053 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Press [q] to stop, [?] for help
+2025-04-02 21:46:26.055 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Output #0, s16le, to 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601586019936400.pcm':
+2025-04-02 21:46:26.056 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+2025-04-02 21:46:26.065 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: [out#0/s16le @ 0000026d883e3a00]
+2025-04-02 21:46:26.065 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: video:0KiB audio:147KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+size=     147KiB time=00:00:03.14 bitrate= 384.0kbits/s speed= 221x
+2025-04-02 21:46:26.070 [[32mINFO[0m] [logger.go:185] FFmpeg转换为PCM完成
+2025-04-02 21:46:26.071 [[37mDEBUG[0m] [logger.go:180] 执行Encoder命令: D:\silk\encoder.exe C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601586019936400.pcm C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_214626.silk -tencent
+2025-04-02 21:46:26.220 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                1Packets encoded:                2Packets encoded:                3Packets encoded:                4Packets encoded:                5Packets encoded:                6Packets encoded:                7Packets encoded:                8Packets encoded:                9Packets encoded:                10Packets encoded:                11Packets encoded:                12Packets encoded:                13Packets encoded:                14Packets encoded:                15Packets encoded:                16Packets encoded:                17Packets encoded:                18Packets encoded:                19Packets encoded:                20Packets encoded:                21Packets encoded:                22Packets encoded:                23Packets encoded:                24Packets encoded:                25Packets encoded:                26Packets encoded:                27Packets encoded:                28Packets encoded:                29Packets encoded:
+2025-04-02 21:46:26.223 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 30Packets encoded:                31Packets encoded:                32Packets encoded:                33Packets encoded:                34Packets encoded:                35Packets encoded:                36Packets encoded:                37Packets encoded:                38Packets encoded:                39Packets encoded:                40Packets encoded:                41Packets encoded:                42Packets encoded:                43Packets encoded:                44Packets encoded:                45Packets encoded:                46Packets encoded:                47Packets encoded:                48Packets encoded:                49Packets encoded:                50Packets encoded:                51Packets encoded:                52Packets encoded:                53Packets encoded:                54Packets encoded:                55Packets encoded:                56Packets encoded:                57Packets encoded:                58Packets encoded:
+2025-04-02 21:46:26.227 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 59Packets encoded:                60Packets encoded:                61Packets encoded:                62Packets encoded:                63Packets encoded:                64Packets encoded:                65Packets encoded:                66Packets encoded:                67Packets encoded:                68Packets encoded:                69Packets encoded:                70Packets encoded:                71Packets encoded:                72Packets encoded:                73Packets encoded:                74Packets encoded:                75Packets encoded:                76Packets encoded:                77Packets encoded:                78Packets encoded:                79Packets encoded:                80Packets encoded:                81Packets encoded:                82Packets encoded:                83Packets encoded:                84Packets encoded:                85Packets encoded:                86Packets encoded:                87Packets encoded:                88
+2025-04-02 21:46:26.229 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                89Packets encoded:                90Packets encoded:                91Packets encoded:                92Packets encoded:                93Packets encoded:                94Packets encoded:                95Packets encoded:                96Packets encoded:                97Packets encoded:                98Packets encoded:                99Packets encoded:                100Packets encoded:                101Packets encoded:                102Packets encoded:                103Packets encoded:                104Packets encoded:                105Packets encoded:                106Packets encoded:                107Packets encoded:                108Packets encoded:                109Packets encoded:                110Packets encoded:                111Packets encoded:                112Packets encoded:                113Packets encoded:                114Packets encoded:                115Packets encoded:                116Packets encoded:
+2025-04-02 21:46:26.264 [[37mDEBUG[0m] [logger.go:180] 命令标准输出: ********** Silk Encoder (Fixed Point) v 1.0.9.6 ********************
+********** Compiled for 32 bit cpu ******************************* 
+Input:                          C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\uploads\1743601586019936400.pcm
+Output:                         C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\outputs\20250402_214626.silk
+API sampling rate:              24000 Hz
+Maximum internal sampling rate: 24000 Hz
+Packet interval:                20 ms
+Inband FEC used:                0
+DTX used:                       0
+Complexity:                     2
+Target bitrate:                 25000 bps
+
+File length:                    3.140 s
+Time for encoding:              0.177 s (5.635% of realtime)
+Average bitrate:                21.149 kbps
+Active bitrate:                 25.633 kbps
+2025-04-02 21:46:26.264 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 117Packets encoded:                118Packets encoded:                119Packets encoded:                120Packets encoded:                121Packets encoded:                122Packets encoded:                123Packets encoded:                124Packets encoded:                125Packets encoded:                126Packets encoded:                127Packets encoded:                128Packets encoded:                129Packets encoded:                130Packets encoded:                131Packets encoded:                132Packets encoded:                133Packets encoded:                134Packets encoded:                135Packets encoded:                136Packets encoded:                137Packets encoded:                138Packets encoded:                139Packets encoded:                140Packets encoded:                141Packets encoded:                142Packets encoded:                143Packets encoded:                144Packets encoded:                145Packets
+2025-04-02 21:46:26.267 [[32mINFO[0m] [logger.go:185] PCM转换为SILK完成
+2025-04-02 21:46:26.269 [[37mDEBUG[0m] [logger.go:180] 临时文件已清理
+2025-04-02 21:46:26.269 [[32mINFO[0m] [logger.go:185] 音频转换成功: 20250402_214626.silk
+2025-04-02 21:46:26.270 [[32mINFO[0m] [logger.go:185] 音频转换成功: ttsmaker-file-2025-4-2-18-20-25.mp3 -> 20250402_214626.silk (耗时: 0.26秒)
+2025-04-02 21:47:18.024 [[32mINFO[0m] [logger.go:185] 收到文件上传请求: 127.0.0.1
+2025-04-02 21:47:18.024 [[31mERROR[0m] [logger.go:195] 上传文件失败: 127.0.0.1: request Content-Type isn't multipart/form-data
+2025-04-02 21:48:35.310 [[32mINFO[0m] [logger.go:185] 正在关闭服务器...
+2025-04-02 21:48:35.311 [[37mDEBUG[0m] [logger.go:180] 开始执行清理任务
+2025-04-02 21:48:35.311 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./uploads
+2025-04-02 21:48:35.312 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./outputs
+2025-04-02 21:48:35.313 [[37mDEBUG[0m] [logger.go:180] 清理任务完成
+2025-04-02 21:48:35.313 [[32mINFO[0m] [logger.go:185] 服务器已关闭
+2025-04-02 21:48:35.313 [[32mINFO[0m] [logger.go:185] 日志系统关闭
+2025-04-02 21:51:02.731 [[32mINFO[0m] [logger.go:185] 日志系统初始化完成，日志文件: logs\audio_converter_2025-04-02.log
+2025-04-02 21:51:02.732 [[32mINFO[0m] [logger.go:185] ==== 音频转换服务初始化 ====
+2025-04-02 21:51:02.732 [[32mINFO[0m] [logger.go:185] 调试模式: true
+2025-04-02 21:51:02.732 [[32mINFO[0m] [logger.go:185] 日志级别: DEBUG
+2025-04-02 21:51:02.732 [[32mINFO[0m] [logger.go:185] 彩色日志: true
+2025-04-02 21:51:02.738 [[32mINFO[0m] [logger.go:185] 在PATH中找到ffmpeg: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:51:02.748 [[32mINFO[0m] [logger.go:185] 在PATH中找到encoder: D:\silk\encoder.exe
+2025-04-02 21:51:02.748 [[32mINFO[0m] [logger.go:185] 音频服务初始化: 上传目录=C:\Users\Administrator\Desktop\go文件管理系统\uploads, SILK目录=C:\Users\Administrator\Desktop\go文件管理系统\outputs
+2025-04-02 21:51:02.749 [[37mDEBUG[0m] [logger.go:180] FFmpeg路径: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe
+2025-04-02 21:51:02.749 [[37mDEBUG[0m] [logger.go:180] Encoder路径: D:\silk\encoder.exe
+2025-04-02 21:51:02.750 [[37mDEBUG[0m] [logger.go:180] 启动文件清理定时任务，间隔: 1小时
+2025-04-02 21:51:02.754 [[32mINFO[0m] [logger.go:185] 音频转换服务启动在 http://localhost:8080
+2025-04-02 21:51:02.754 [[32mINFO[0m] [logger.go:185] 上传目录: ./uploads
+2025-04-02 21:51:02.754 [[32mINFO[0m] [logger.go:185] 输出目录: ./outputs
+2025-04-02 21:51:02.755 [[37mDEBUG[0m] [logger.go:180] 路由配置:
+2025-04-02 21:51:02.755 [[37mDEBUG[0m] [logger.go:180]   GET  /                - 首页
+2025-04-02 21:51:02.755 [[37mDEBUG[0m] [logger.go:180]   POST /upload          - 文件上传接口
+2025-04-02 21:51:02.756 [[37mDEBUG[0m] [logger.go:180]   POST /url             - URL转换接口
+2025-04-02 21:51:02.756 [[37mDEBUG[0m] [logger.go:180]   POST /tts             - 文本转语音接口(未实现)
+2025-04-02 21:51:02.756 [[37mDEBUG[0m] [logger.go:180]   POST /convert         - 音频转换接口
+2025-04-02 21:51:02.757 [[37mDEBUG[0m] [logger.go:180]   GET  /download/:file  - 文件下载接口
+2025-04-02 21:51:02.757 [[37mDEBUG[0m] [logger.go:180]   GET  /api/files       - 文件列表接口
+2025-04-02 21:51:02.758 [[37mDEBUG[0m] [logger.go:180]   GET  /static/*file    - 静态资源
+2025-04-02 21:51:06.884 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29677
+2025-04-02 21:51:16.568 [[32mINFO[0m] [logger.go:185] 收到文件上传请求: 127.0.0.1
+2025-04-02 21:51:16.568 [[31mERROR[0m] [logger.go:195] 上传文件失败: 127.0.0.1: request Content-Type isn't multipart/form-data
+2025-04-02 21:51:33.253 [[37mDEBUG[0m] [logger.go:180] 使用本地文件: 13213
+2025-04-02 21:51:33.254 [[37mDEBUG[0m] [logger.go:180] 输出文件路径: C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_215133.silk
+2025-04-02 21:51:33.255 [[37mDEBUG[0m] [logger.go:180] 创建临时PCM文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601893255300500.pcm
+2025-04-02 21:51:33.256 [[37mDEBUG[0m] [logger.go:180] 执行FFmpeg命令: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe -i 13213 -f s16le -acodec pcm_s16le -ar 24000 -ac 1 C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601893255300500.pcm
+2025-04-02 21:51:33.290 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: ffmpeg version 7.1.1-essentials_build-www.gyan.dev
+2025-04-02 21:51:33.303 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libop
+2025-04-02 21:51:33.303 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: encore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[in#0 @ 0000011ed4b02e00] Error opening input: No such file or directory
+Error opening input file 13213.
+Error opening input files: No such file or directory
+2025-04-02 21:51:33.324 [[31mERROR[0m] [logger.go:195] 音频转换失败: PCM转换失败: exit status 0xfffffffe
+2025-04-02 21:51:43.810 [[31mERROR[0m] [logger.go:195] 不支持的Content-Type: application/x-www-form-urlencoded
+2025-04-02 21:52:41.963 [[32mINFO[0m] [logger.go:185] 开始下载文件: https://audio-free.url.work/file/ttsmaker-free_47ab9382-7295-4ac6-86ef-72266d5114e8/2025-04-02-182023_144229_qWVSl5.mp3
+2025-04-02 21:52:43.213 [[32mINFO[0m] [logger.go:185] 文件下载完成: 1743601963033970300.mp3 (大小: 18864 字节)
+2025-04-02 21:52:43.215 [[32mINFO[0m] [logger.go:185] 已下载文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601963033970300.mp3
+2025-04-02 21:52:43.215 [[37mDEBUG[0m] [logger.go:180] 输出文件路径: C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_215243.silk
+2025-04-02 21:52:43.215 [[37mDEBUG[0m] [logger.go:180] 创建临时PCM文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601963215687400.pcm
+2025-04-02 21:52:43.217 [[37mDEBUG[0m] [logger.go:180] 执行FFmpeg命令: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe -i C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601963033970300.mp3 -f s16le -acodec pcm_s16le -ar 24000 -ac 1 C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601963215687400.pcm
+2025-04-02 21:52:43.231 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: ffmpeg version 7.1.1-essentials_build-www.gyan.dev
+2025-04-02 21:52:43.232 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libop
+2025-04-02 21:52:43.236 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: encore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+2025-04-02 21:52:43.240 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: [mp3 @ 000002740b86f480]
+2025-04-02 21:52:43.241 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601963033970300.mp3':
+  Duration: 00:00:03.14, start: 0.000000, bitrate: 48 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 48 kb/s
+2025-04-02 21:52:43.242 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+2025-04-02 21:52:43.244 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Press [q] to stop, [?] for help
+2025-04-02 21:52:43.245 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Output #0, s16le, to 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601963215687400.pcm':
+2025-04-02 21:52:43.246 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+2025-04-02 21:52:43.252 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: [out#0/s16le @ 000002740b883a00]
+2025-04-02 21:52:43.253 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: video:0KiB audio:147KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+size=     147KiB time=00:00:03.14 bitrate= 384.0kbits/s speed= 326x
+2025-04-02 21:52:43.259 [[32mINFO[0m] [logger.go:185] FFmpeg转换为PCM完成
+2025-04-02 21:52:43.259 [[37mDEBUG[0m] [logger.go:180] 执行Encoder命令: D:\silk\encoder.exe C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743601963215687400.pcm C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_215243.silk -tencent
+2025-04-02 21:52:43.354 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                1Packets encoded:                2Packets encoded:                3Packets encoded:                4Packets encoded:                5Packets encoded:                6Packets encoded:                7Packets encoded:                8Packets encoded:                9Packets encoded:                10Packets encoded:                11Packets encoded:                12Packets encoded:                13Packets encoded:                14Packets encoded:                15Packets encoded:                16Packets encoded:                17Packets encoded:                18Packets encoded:                19Packets encoded:                20Packets encoded:                21Packets encoded:                22Packets encoded:                23Packets encoded:                24Packets encoded:                25Packets encoded:                26Packets encoded:                27Packets encoded:                28Packets encoded:                29Packets encoded:
+2025-04-02 21:52:43.355 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 30Packets encoded:                31Packets encoded:                32Packets encoded:                33Packets encoded:                34Packets encoded:                35Packets encoded:                36Packets encoded:                37Packets encoded:                38Packets encoded:                39Packets encoded:                40Packets encoded:                41Packets encoded:                42Packets encoded:                43Packets encoded:                44Packets encoded:                45Packets encoded:                46Packets encoded:                47Packets encoded:                48Packets encoded:                49Packets encoded:                50Packets encoded:                51Packets encoded:                52Packets encoded:                53Packets encoded:                54Packets encoded:                55Packets encoded:                56Packets encoded:                57Packets encoded:                58Packets encoded:
+2025-04-02 21:52:43.356 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 59Packets encoded:                60Packets encoded:                61Packets encoded:                62Packets encoded:                63Packets encoded:                64Packets encoded:                65Packets encoded:                66Packets encoded:                67Packets encoded:                68Packets encoded:                69Packets encoded:                70Packets encoded:                71Packets encoded:                72Packets encoded:                73Packets encoded:                74Packets encoded:                75Packets encoded:                76Packets encoded:                77Packets encoded:                78Packets encoded:                79Packets encoded:                80Packets encoded:                81Packets encoded:                82Packets encoded:                83Packets encoded:                84Packets encoded:                85Packets encoded:                86Packets encoded:                87Packets encoded:                88
+2025-04-02 21:52:43.356 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                89Packets encoded:                90Packets encoded:                91Packets encoded:                92Packets encoded:                93Packets encoded:                94Packets encoded:                95Packets encoded:                96Packets encoded:                97Packets encoded:                98Packets encoded:                99Packets encoded:                100Packets encoded:                101Packets encoded:                102Packets encoded:                103Packets encoded:                104Packets encoded:                105Packets encoded:                106Packets encoded:                107Packets encoded:                108Packets encoded:                109Packets encoded:                110Packets encoded:                111Packets encoded:                112Packets encoded:                113Packets encoded:                114Packets encoded:                115Packets encoded:                116Packets encoded:
+2025-04-02 21:52:43.381 [[37mDEBUG[0m] [logger.go:180] 命令标准输出: ********** Silk Encoder (Fixed Point) v 1.0.9.6 ********************
+********** Compiled for 32 bit cpu ******************************* 
+Input:                          C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\uploads\1743601963215687400.pcm
+Output:                         C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\outputs\20250402_215243.silk
+API sampling rate:              24000 Hz
+Maximum internal sampling rate: 24000 Hz
+Packet interval:                20 ms
+Inband FEC used:                0
+DTX used:                       0
+Complexity:                     2
+Target bitrate:                 25000 bps
+
+File length:                    3.140 s
+Time for encoding:              0.112 s (3.568% of realtime)
+Average bitrate:                21.149 kbps
+Active bitrate:                 25.633 kbps
+2025-04-02 21:52:43.381 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 117Packets encoded:                118Packets encoded:                119Packets encoded:                120Packets encoded:                121Packets encoded:                122Packets encoded:                123Packets encoded:                124Packets encoded:                125Packets encoded:                126Packets encoded:                127Packets encoded:                128Packets encoded:                129Packets encoded:                130Packets encoded:                131Packets encoded:                132Packets encoded:                133Packets encoded:                134Packets encoded:                135Packets encoded:                136Packets encoded:                137Packets encoded:                138Packets encoded:                139Packets encoded:                140Packets encoded:                141Packets encoded:                142Packets encoded:                143Packets encoded:                144Packets encoded:                145Packets
+2025-04-02 21:52:43.387 [[32mINFO[0m] [logger.go:185] PCM转换为SILK完成
+2025-04-02 21:52:43.388 [[37mDEBUG[0m] [logger.go:180] 临时文件已清理
+2025-04-02 21:52:43.388 [[32mINFO[0m] [logger.go:185] 音频转换成功: 20250402_215243.silk
+2025-04-02 21:52:43.393 [[32mINFO[0m] [logger.go:185] 音频转换成功: http://198.18.0.1:8080/download/20250402_215243.silk
+2025-04-02 21:55:17.691 [[32mINFO[0m] [logger.go:185] 开始下载文件: https://audio-free.url.work/file/ttsmaker-free_47ab9382-7295-4ac6-86ef-72266d5114e8/2025-04-02-182023_144229_qWVSl5.mp3
+2025-04-02 21:55:19.130 [[32mINFO[0m] [logger.go:185] 文件下载完成: 1743602119059164100.mp3 (大小: 18864 字节)
+2025-04-02 21:55:19.131 [[32mINFO[0m] [logger.go:185] 已下载文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743602119059164100.mp3
+2025-04-02 21:55:19.131 [[37mDEBUG[0m] [logger.go:180] 输出文件路径: C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_215519.silk
+2025-04-02 21:55:19.132 [[37mDEBUG[0m] [logger.go:180] 创建临时PCM文件: C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743602119132516000.pcm
+2025-04-02 21:55:19.133 [[37mDEBUG[0m] [logger.go:180] 执行FFmpeg命令: D:\ffmpeg-7.1.1-essentials_build\bin\ffmpeg.exe -i C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743602119059164100.mp3 -f s16le -acodec pcm_s16le -ar 24000 -ac 1 C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743602119132516000.pcm
+2025-04-02 21:55:19.147 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: ffmpeg version 7.1.1-essentials_build-www.gyan.dev
+2025-04-02 21:55:19.149 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libop
+2025-04-02 21:55:19.158 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: encore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[mp3 @ 0000026e258ff480] Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743602119059164100.mp3':
+  Duration: 00:00:03.14, start: 0.000000, bitrate: 48 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 48 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+2025-04-02 21:55:19.165 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Press [q] to stop, [?] for help
+2025-04-02 21:55:19.167 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Output #0, s16le, to 'C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743602119132516000.pcm':
+2025-04-02 21:55:19.168 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Audio: pcm_s16le, 24000 Hz, mono, s16, 384 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+2025-04-02 21:55:19.174 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: [out#0/s16le @ 0000026e25913a00]
+2025-04-02 21:55:19.174 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: video:0KiB audio:147KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000000%
+size=     147KiB time=00:00:03.14 bitrate= 384.0kbits/s speed= 341x
+2025-04-02 21:55:19.182 [[32mINFO[0m] [logger.go:185] FFmpeg转换为PCM完成
+2025-04-02 21:55:19.183 [[37mDEBUG[0m] [logger.go:180] 执行Encoder命令: D:\silk\encoder.exe C:\Users\Administrator\Desktop\go文件管理系统\uploads\1743602119132516000.pcm C:\Users\Administrator\Desktop\go文件管理系统\outputs\20250402_215519.silk -tencent
+2025-04-02 21:55:19.300 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                1Packets encoded:                2Packets encoded:                3Packets encoded:                4Packets encoded:                5Packets encoded:                6Packets encoded:                7Packets encoded:                8Packets encoded:                9Packets encoded:                10Packets encoded:                11Packets encoded:                12Packets encoded:                13Packets encoded:                14Packets encoded:                15Packets encoded:                16Packets encoded:                17Packets encoded:                18Packets encoded:                19Packets encoded:                20Packets encoded:                21Packets encoded:                22Packets encoded:                23Packets encoded:                24Packets encoded:                25Packets encoded:                26Packets encoded:                27Packets encoded:                28Packets encoded:                29Packets encoded:
+2025-04-02 21:55:19.301 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 30Packets encoded:                31Packets encoded:                32Packets encoded:                33Packets encoded:                34Packets encoded:                35Packets encoded:                36Packets encoded:                37Packets encoded:                38Packets encoded:                39Packets encoded:                40Packets encoded:                41Packets encoded:                42Packets encoded:                43Packets encoded:                44Packets encoded:                45Packets encoded:                46Packets encoded:                47Packets encoded:                48Packets encoded:                49Packets encoded:                50Packets encoded:                51Packets encoded:                52Packets encoded:                53Packets encoded:                54Packets encoded:                55Packets encoded:                56Packets encoded:                57Packets encoded:                58Packets encoded:
+2025-04-02 21:55:19.302 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 59Packets encoded:                60Packets encoded:                61Packets encoded:                62Packets encoded:                63Packets encoded:                64Packets encoded:                65Packets encoded:                66Packets encoded:                67Packets encoded:                68Packets encoded:                69Packets encoded:                70Packets encoded:                71Packets encoded:                72Packets encoded:                73Packets encoded:                74Packets encoded:                75Packets encoded:                76Packets encoded:                77Packets encoded:                78Packets encoded:                79Packets encoded:                80Packets encoded:                81Packets encoded:                82Packets encoded:                83Packets encoded:                84Packets encoded:                85Packets encoded:                86Packets encoded:                87Packets encoded:                88
+2025-04-02 21:55:19.303 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: Packets encoded:                89Packets encoded:                90Packets encoded:                91Packets encoded:                92Packets encoded:                93Packets encoded:                94Packets encoded:                95Packets encoded:                96Packets encoded:                97Packets encoded:                98Packets encoded:                99Packets encoded:                100Packets encoded:                101Packets encoded:                102Packets encoded:                103Packets encoded:                104Packets encoded:                105Packets encoded:                106Packets encoded:                107Packets encoded:                108Packets encoded:                109Packets encoded:                110Packets encoded:                111Packets encoded:                112Packets encoded:                113Packets encoded:                114Packets encoded:                115Packets encoded:                116Packets encoded:
+2025-04-02 21:55:19.332 [[37mDEBUG[0m] [logger.go:180] 命令标准输出: ********** Silk Encoder (Fixed Point) v 1.0.9.6 ********************
+********** Compiled for 32 bit cpu ******************************* 
+Input:                          C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\uploads\1743602119132516000.pcm
+Output:                         C:\Users\Administrator\Desktop\go�ļ�����ϵͳ\outputs\20250402_215519.silk
+API sampling rate:              24000 Hz
+Maximum internal sampling rate: 24000 Hz
+Packet interval:                20 ms
+Inband FEC used:                0
+DTX used:                       0
+Complexity:                     2
+Target bitrate:                 25000 bps
+
+File length:                    3.140 s
+Time for encoding:              0.138 s (4.399% of realtime)
+Average bitrate:                21.149 kbps
+Active bitrate:                 25.633 kbps
+2025-04-02 21:55:19.332 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: 117Packets encoded:                118Packets encoded:                119Packets encoded:                120Packets encoded:                121Packets encoded:                122Packets encoded:                123Packets encoded:                124Packets encoded:                125Packets encoded:                126Packets encoded:                127Packets encoded:                128Packets encoded:                129Packets encoded:                130Packets encoded:                131Packets encoded:                132Packets encoded:                133Packets encoded:                134Packets encoded:                135Packets encoded:                136Packets encoded:                137Packets encoded:                138Packets encoded:                139Packets encoded:                140Packets encoded:                141Packets encoded:                142Packets encoded:                143Packets encoded:                144Packets encoded:                145Packets
+2025-04-02 21:55:19.339 [[37mDEBUG[0m] [logger.go:180] 命令错误输出: encoded:                146Packets encoded:                147Packets encoded:                148Packets encoded:                149Packets encoded:                150Packets encoded:                151Packets encoded:                152Packets encoded:                153Packets encoded:                154Packets encoded:                155Packets encoded:                156Packets encoded:                157
+2025-04-02 21:55:19.339 [[32mINFO[0m] [logger.go:185] PCM转换为SILK完成
+2025-04-02 21:55:19.340 [[37mDEBUG[0m] [logger.go:180] 临时文件已清理
+2025-04-02 21:55:19.341 [[32mINFO[0m] [logger.go:185] 音频转换成功: 20250402_215519.silk
+2025-04-02 21:55:19.347 [[32mINFO[0m] [logger.go:185] 音频转换成功: http://198.18.0.1:8080/download/20250402_215519.silk
+2025-04-02 21:55:33.658 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29787
+2025-04-02 21:56:40.988 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29787
+2025-04-02 21:56:56.274 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29787
+2025-04-02 21:57:08.067 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29787
+2025-04-02 21:57:35.530 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29787
+2025-04-02 21:57:56.181 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29787
+2025-04-02 21:58:14.912 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:29787
+2025-04-02 21:59:35.413 [[37mDEBUG[0m] [logger.go:180] 处理首页请求: 127.0.0.1:30231
+2025-04-02 21:59:44.164 [[32mINFO[0m] [logger.go:185] 正在关闭服务器...
+2025-04-02 21:59:44.164 [[37mDEBUG[0m] [logger.go:180] 开始执行清理任务
+2025-04-02 21:59:44.164 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./uploads
+2025-04-02 21:59:44.165 [[37mDEBUG[0m] [logger.go:180] 清理目录: ./outputs
+2025-04-02 21:59:44.165 [[37mDEBUG[0m] [logger.go:180] 清理任务完成
+2025-04-02 21:59:44.165 [[32mINFO[0m] [logger.go:185] 服务器已关闭
+2025-04-02 21:59:44.165 [[32mINFO[0m] [logger.go:185] 日志系统关闭

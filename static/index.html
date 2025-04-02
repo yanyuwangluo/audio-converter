@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频转换系统</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .file-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .upload-area {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .upload-area:hover {
+            border-color: #666;
+        }
+        .delete-btn {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        .status-badge {
+            font-size: 0.8em;
+            padding: 0.25em 0.5em;
+        }
+        .log-output {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">音频转换系统</h2>
+        
+        <!-- 上传区域 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">上传音频</h5>
+                <div class="upload-area" id="dropZone">
+                    <p>拖拽文件到此处或点击选择文件</p>
+                    <input type="file" id="fileInput" accept="audio/*" style="display: none;">
+                </div>
+                <div class="mb-3">
+                    <label for="urlInput" class="form-label">或输入音频URL：</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="urlInput" placeholder="http://example.com/audio.mp3">
+                        <button class="btn btn-primary" onclick="convertUrl()">转换</button>
+                    </div>
+                </div>
+                <!-- 日志输出区域 -->
+                <div id="logOutput" class="log-output" style="display: none;"></div>
+            </div>
+        </div>
+
+        <!-- 文件列表 -->
+        <div class="row">
+            <!-- OPUS文件列表 -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header position-relative">
+                        转换后的OPUS文件
+                        <button class="btn btn-danger btn-sm delete-btn" onclick="confirmDeleteFiles('opus')">
+                            删除全部
+                        </button>
+                    </div>
+                    <div class="card-body file-list" id="opusList">
+                        <div class="list-group">
+                            <!-- OPUS文件列表将在这里动态显示 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 确认删除对话框 -->
+    <div class="modal fade" id="deleteConfirmModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">确认删除</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    确定要删除所有文件吗？此操作不可恢复！
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">确认删除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入Bootstrap JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 获取文件列表
+        function refreshFileLists() {
+            fetch('/api/files')
+                .then(response => response.json())
+                .then(data => {
+                    // 更新OPUS文件列表
+                    const opusList = document.getElementById('opusList').querySelector('.list-group');
+                    opusList.innerHTML = data.silk_files.map(file => `
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>${file.name}</span>
+                                <div>
+                                    <button class="btn btn-sm btn-info me-1" onclick="copyFileLink('${file.name}')">复制链接</button>
+                                    <a href="/api/download/${file.name}" class="btn btn-sm btn-primary">下载</a>
+                                    <small class="text-muted ms-2">${new Date(file.time).toLocaleString()}</small>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                })
+                .catch(error => {
+                    console.error('获取文件列表失败:', error);
+                    showLogOutput('获取文件列表失败，请刷新页面重试', true);
+                });
+        }
+
+        // 删除文件确认
+        let deleteType = '';
+        const deleteModal = new bootstrap.Modal(document.getElementById('deleteConfirmModal'));
+
+        function confirmDeleteFiles(type) {
+            deleteType = type;
+            deleteModal.show();
+        }
+
+        // 删除文件
+        document.getElementById('confirmDeleteBtn').addEventListener('click', function() {
+            fetch(`/api/delete/${deleteType}`, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('删除成功！');
+                    refreshFileLists();
+                } else {
+                    alert('删除失败：' + data.error);
+                }
+                deleteModal.hide();
+            })
+            .catch(error => {
+                alert('删除失败：' + error);
+                deleteModal.hide();
+            });
+        });
+
+        // 显示日志输出
+        function showLogOutput(message, isError = false) {
+            const logOutput = document.getElementById('logOutput');
+            logOutput.style.display = 'block';
+            const logEntry = document.createElement('div');
+            logEntry.className = isError ? 'text-danger' : 'text-success';
+            logEntry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logOutput.appendChild(logEntry);
+            logOutput.scrollTop = logOutput.scrollHeight;
+        }
+
+        // 文件上传处理
+        function uploadFile(file) {
+            const formData = new FormData();
+            formData.append('file', file);
+
+            showLogOutput(`开始上传文件: ${file.name}`);
+
+            fetch('/convert', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showLogOutput(`转换成功！耗时: ${data.duration}`);
+                    refreshFileLists();
+                } else {
+                    showLogOutput(`转换失败：${data.error}`, true);
+                }
+            })
+            .catch(error => {
+                showLogOutput(`上传失败：${error}`, true);
+            });
+        }
+
+        // URL转换处理
+        function convertUrl() {
+            const url = document.getElementById('urlInput').value;
+            if (!url) {
+                alert('请输入URL');
+                return;
+            }
+
+            showLogOutput(`开始处理URL: ${url}`);
+
+            fetch('/convert', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ url: url })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showLogOutput(`转换成功！耗时: ${data.duration}`);
+                    refreshFileLists();
+                    document.getElementById('urlInput').value = '';
+                } else {
+                    showLogOutput(`转换失败：${data.error}`, true);
+                }
+            })
+            .catch(error => {
+                showLogOutput(`转换失败：${error}`, true);
+            });
+        }
+
+        // 复制文件链接
+        function copyFileLink(filename) {
+            const link = `${window.location.origin}/api/download/${filename}`;
+            navigator.clipboard.writeText(link).then(() => {
+                showLogOutput('文件链接已复制到剪贴板');
+            }).catch(err => {
+                showLogOutput('复制链接失败：' + err, true);
+            });
+        }
+
+        // 拖放处理
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                uploadFile(fileInput.files[0]);
+            }
+        });
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#666';
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.borderColor = '#ccc';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#ccc';
+            if (e.dataTransfer.files.length > 0) {
+                uploadFile(e.dataTransfer.files[0]);
+            }
+        });
+
+        // 页面加载时获取文件列表
+        document.addEventListener('DOMContentLoaded', refreshFileLists);
+    </script>
+</body>
+</html> 
